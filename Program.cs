@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 namespace Elevator
 {
     class Program
-    {
-        
+    {       
         static void Main(string[] args)
         {
             int floor;
@@ -24,16 +23,17 @@ namespace Elevator
                 if(floor > currentFloor)
                 { 
                     currentFloor++;
+                    Console.WriteLine( "Going up... Current floor " + currentFloor);
                 }
                 else
                 {
                     currentFloor--;
+                    Console.WriteLine("Going down...Current floor " + currentFloor);
                 }
                 
             }
             Console.WriteLine("You arrived floor " + currentFloor);
             Console.ReadKey();
-        }
-       
+        }     
     }
 }
