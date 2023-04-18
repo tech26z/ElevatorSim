@@ -29,8 +29,7 @@ namespace Elevator
                 {
                     currentFloor--;
                     Console.WriteLine("Going down...Current floor " + currentFloor);
-                }
-                
+                }              
             }
             Console.WriteLine("You arrived floor " + currentFloor);
             Console.ReadKey();
